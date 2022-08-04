@@ -1,9 +1,9 @@
 // 모던 자바스크립트 Deep Dive 284p 프로토타입 예제 변형
-
 const person = (() => {
     function Person() { }
 
     Person.prototype.sayHello = (name) => {
+        global.name = name;
         console.log(`Hi my name is ${name}`);
     }
 
@@ -15,6 +15,7 @@ const animal = (() => {
     function Animal() {}
 
     Animal.prototype.sayHello = (name) => {
+        global.name = name;
         console.log(`Hi I am ${name}`);
     }
 
