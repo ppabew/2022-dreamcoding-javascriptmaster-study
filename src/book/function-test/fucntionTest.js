@@ -5,4 +5,7 @@ function sum(a,b) {
 
 const num = 7;
 
-export {sum, num}
+module.exports = {
+    sum,
+    num
+}

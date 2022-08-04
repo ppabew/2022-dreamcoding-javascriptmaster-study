@@ -1,5 +1,5 @@
-import {num, sum} from "./fucntionTest.js";
+const value = require("./fucntionTest.js");
 
 
-let total = sum(3,5);
+let total = value.sum(3,5);
 console.log(total);
